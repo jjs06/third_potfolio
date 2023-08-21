@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+
+    <link rel="stylesheet" href="css/pr3.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+            let page = 1;
+            let total = $('.s').length;
+            $('.page').html(page + ' / ' + total);
+
+            $('.up').on('click', function () {
+                page--;
+                if (page < 1) {
+                    page = total;
+                }
+                $('.page').html(page + ' / ' + total);
+
+                $('.slide>.s:last').prependTo('.slide');
+                $('.slide').css({ marginTop: '-963px' });
+                $('.slide').stop().animate({ marginTop: 0 }, 800);
+            });
+
+            $('.down').on('click', function () {
+                page++;
+                if (page > total) {
+                    page = 1;
+                }
+                $('.page').html(page + ' / ' + total);
+
+                $('.slide').stop().animate({ marginTop: '-963px' }, 800, function () {
+                    $('.slide>.s:first').appendTo('.slide');
+                    $('.slide').css({ marginTop: 0 });
+                });
+            });
+
+            $('.ic').click(function () {
+
+                $(this).toggleClass('is-active')
+
+                if ($('nav').hasClass('full_n')) {
+                    $('nav>ul').hide();
+                } else {
+                    $('nav>ul').fadeIn(2000);
+                }
+
+                $('nav').toggleClass('full_n');
+
+            });
+
+            $('.nt').click(function () {
+                $('html, body').animate({ scrollTop: 963}, 1000);
+
+                return false;
+            });
+        });
+    </script>
+</head>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo">
+                <img src="img/testlogo.png" alt="">
+            </div>
+            <div id="m_menu">
+                <p class="login">LOGIN</p>
+                <div class="surch">
+                    <img src="img/surch.png" alt="surch">
+                </div>
+                <div class="m_list">
+                    <div id="m_icon" class="ic">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <span class="t">Epoch.P</span>
+                        <ul class="sub">
+                            <li>소개 <span>About us</span></li>
+                            <li>관람 <span>visit</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="t">Exhbition</span>
+                        <ul class="sub">
+                            <li>진행중 전시<span>Current</span></li>
+                            <li>예정전시 <span>Upcoming</span></li>
+                            <li>지난전시<span>past</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="t">Program</span>
+                        <ul class="sub">
+                            <li>교육/체험프로그램<span>Past & current</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="slider">
+            <div class="slide">
+
+                <div class="s">
+
+                    <div class="con">
+                        <h1>채색영역</h1>
+                        <p>Draw dream</p>
+                    </div>
+
+                    <img src="img/slide_m.jpg" alt="">
+
+
+                </div>
+
+                <div class="s">
+
+                    <div class="con">
+                        <span>Date 23.08.08 ~ 23.08.08</span>
+                        <h1>에드워드 호퍼</h1>
+                        <p>길 위에서</p>
+                        <button class="btn">전시보기</button>
+                    </div>
+
+                    <img src="img/slide1.jpg" alt="">
+
+
+                </div>
+                <div class="s">
+
+                    <div class="con">
+                        <span>Date 23.08.08 ~ 23.08.08</span>
+                        <h1>거장의 시선, 사람을 향하다 </h1>
+                        <p>영국 내셔널갤러리 명화전</p>
+                        <button class="btn">전시보기</button>
+                    </div>
+
+                    <img src="img/slide2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="s_menu">
+                <div class="pg">
+                    <button class="up">&and;</button>
+                    <p class="page"></p>
+                    <button class="down">&or;</button>
+                </div>
+                <div class="nt">
+                    <p>Go Next</p>
+                    <div class="n"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
