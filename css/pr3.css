@@ -76,7 +76,7 @@ nav ul li .sub li:not(:last-child){margin-right: 45px;}
 
 #slider .slide>.s>.img{width: 100%; position: absolute;}
 
-#slider .slide>.s>.con{width: 1500px; height: 963px; position: absolute; left: 50%; transform:translateX(-50%); display: flex; flex-direction: column; justify-content: center; z-index: 1;}
+#slider .slide>.s>.con{width: 1500px; height: 480px; position: absolute; top: 50%; left: 50%; transform:translate(-50%, -50%); display: flex; flex-direction: column; justify-content: center; z-index: 1;}
 
 #slider .slide>.s>.con span{font-size: 30px; color: #fff; margin-bottom: 30px;}
 #slider .slide>.s>.con p{font-size: 48px; color: #fff; margin-bottom: 90px;}
@@ -86,7 +86,7 @@ nav ul li .sub li:not(:last-child){margin-right: 45px;}
 #slider .s_menu>.pg{width: 60px; height: 210px; position: absolute; top: 50%; transform: translateY(-50%);}
 #slider .s_menu>.pg>.page{width: 60px; height: 30px; margin-bottom: 30px; text-align: center; line-height: 30px;}
 
-#slider .s_menu>.nt{width: 60px; height: 270px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; cursor: pointer; position: absolute; bottom: 0;}
+#slider .s_menu>.nt{width: 60px; height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; cursor: pointer; position: absolute; bottom: 0;}
 #slider .s_menu>.nt p{width: 30px; height: 90px; font-size: 20px;  writing-mode: vertical-rl; line-height: 30px;}
 
-#slider .s_menu>.nt>.n{content: ''; width: 2px; height: 90px; background-color: #fff;}
+#slider .s_menu>.nt>.n{content: ''; width: 1px; height: 90px; background-color: #fff;}

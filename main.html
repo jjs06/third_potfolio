@@ -25,7 +25,7 @@
 
                 $('.slide>.s:last').prependTo('.slide');
                 $('.slide').css({ marginTop: '-963px' });
-                $('.slide').stop().animate({ marginTop: 0 }, 800);
+                $('.slide').stop().animate({ marginTop: 0 }, 500);
             });
 
             $('.down').on('click', function () {
@@ -35,7 +35,7 @@
                 }
                 $('.page').html(page + ' / ' + total);
 
-                $('.slide').stop().animate({ marginTop: '-963px' }, 800, function () {
+                $('.slide').stop().animate({ marginTop: '-963px' }, 600, function () {
                     $('.slide>.s:first').appendTo('.slide');
                     $('.slide').css({ marginTop: 0 });
                 });
@@ -133,8 +133,8 @@
 
                     <div class="con">
                         <span>Date 23.08.08 ~ 23.08.08</span>
-                        <h1>에드워드 호퍼</h1>
-                        <p>길 위에서</p>
+                        <h1>에드워드 호퍼 <span>길 위에서</span></h1>
+                        <p>Edward Hopper: On the road</p>
                         <button class="btn">전시보기</button>
                     </div>
 
@@ -142,12 +142,37 @@
 
 
                 </div>
+
                 <div class="s">
 
                     <div class="con">
                         <span>Date 23.08.08 ~ 23.08.08</span>
-                        <h1>거장의 시선, 사람을 향하다 </h1>
-                        <p>영국 내셔널갤러리 명화전</p>
+                        <h1>알폰스 무하 이모션 </h1>
+                        <p>Alphonse Mucha eMotion</p>
+                        <button class="btn">전시보기</button>
+                    </div>
+
+                    <img src="img/slide2.jpg" alt="">
+                </div>
+
+                <div class="s">
+
+                    <div class="con">
+                        <span>Date 23.08.08 ~ 23.08.08</span>
+                        <h1>박보마 <span>물질의 의식</span></h1>
+                        <p>Park Bo-ma: The Consciousness of Matter</p>
+                        <button class="btn">전시보기</button>
+                    </div>
+
+                    <img src="img/slide2.jpg" alt="">
+                </div>
+
+                <div class="s">
+
+                    <div class="con">
+                        <span>Date 23.08.08 ~ 23.08.08</span>
+                        <h1>일리야 밀스타인 <span>기억의 캐비닛</span></h1>
+                        <p>Ilya Milstein : Memory Cabinet</p>
                         <button class="btn">전시보기</button>
                     </div>
 
