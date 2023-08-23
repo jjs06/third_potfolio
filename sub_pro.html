@@ -10,22 +10,9 @@
     <link rel="stylesheet" href="css/sub_pro.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/m_menu.js"></script>
 
-    <script>
-        $('.ic').click(function () {
-
-            $(this).toggleClass('is-active')
-
-            if ($('nav').hasClass('full_n')) {
-                $('nav>ul').hide();
-            } else {
-                $('nav>ul').fadeIn(2000);
-            }
-
-            $('nav').toggleClass('full_n');
-
-        });
-    </script>
 </head>
 
 <body>
@@ -69,11 +56,11 @@
                         </ul>
                     </li>
                     <li>
-                        <span class="t">Exhbition</span>
+                        <span class="t">Exhibition</span>
                         <ul class="sub">
                             <li>
                                 <a href="#">
-                                    진행중 전시
+                                    진행중인전시
                                     <span>Current</span>
                                 </a>
                             </li>

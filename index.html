@@ -10,79 +10,8 @@
     <link rel="stylesheet" href="css/pr3.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-
-    <script>
-        $(function () {
-
-            // page index
-            let page = $('.s').eq(0).attr('data-value');
-            let total = $('.s').length;
-            $('.page').html(page + ' / ' + total);
-
-            // click slide
-
-            function up(){
-                page = $('.s').eq(-1).attr('data-value');
-
-                if (page < 1) {
-                    page = total;
-                }
-                $('.page').html(page + ' / ' + total);
-
-                $('.slide>.s:last').prependTo('.slide');
-                $('.slide').css({ marginTop: '-963px' });
-                $('.slide').stop().animate({ marginTop: 0 }, 600);
-            }
-
-            function down(){
-                page = $('.s').eq(1).attr('data-value');
-
-                if (page > total) {
-                    page = 1;
-                }
-                $('.page').html(page + ' / ' + total);
-
-                $('.slide').stop().animate({ marginTop: '-963px' }, 600, function () {
-                    $('.slide>.s:first').appendTo('.slide');
-                    $('.slide').css({ marginTop: 0 });
-                });
-            }
-
-            setInterval(down,3500);
-
-            $('.up').on('click', function () {
-                up();
-            });
-
-            $('.down').on('click', function () {
-                down();
-            });
-
-            // mainmenu
-
-            $('.ic').click(function () {
-
-                $(this).toggleClass('is-active')
-
-                if ($('nav').hasClass('full_n')) {
-                    $('nav>ul').hide();
-                } else {
-                    $('nav>ul').fadeIn(2000);
-                }
-
-                $('nav').toggleClass('full_n');
-
-            });
-
-            // submenu
-
-            $('.nt').click(function () {
-                $('html, body').animate({ scrollTop: 963 }, 1000);
-
-                return false;
-            });
-        });
-    </script>
+    <script src="js/m_menu.js"></script>
+    <script src="js/m_slide.js"></script>
 </head>
 </head>
 
@@ -127,11 +56,11 @@
                         </ul>
                     </li>
                     <li>
-                        <span class="t">Exhbition</span>
+                        <span class="t">Exhibition</span>
                         <ul class="sub">
                             <li>
                                 <a href="#">
-                                    진행중 전시
+                                    진행중인전시
                                     <span>Current</span>
                                 </a>
                             </li>
@@ -205,19 +134,8 @@
                     <img src="img/Alphonse Mucha_3.jpg" alt="">
                 </div>
 
+
                 <div class="s" data-value="4">
-
-                    <div class="con">
-                        <span>Date 23.08.08 ~ 23.08.08</span>
-                        <h1>박보마 <span>물질의 의식</span></h1>
-                        <p>Park Bo-ma: The Consciousness of Matter</p>
-                        <button class="btn">전시보기</button>
-                    </div>
-
-                    <img src="img/박보마.jpg" alt="">
-                </div>
-
-                <div class="s" data-value="5">
 
                     <div class="con">
                         <span>Date 23.08.08 ~ 23.08.08</span>
@@ -227,6 +145,18 @@
                     </div>
 
                     <img src="img/밀리야_밀스타인1.jpg" alt="">
+                </div>
+
+                <div class="s" data-value="5">
+
+                    <div class="con">
+                        <span>Date 23.08.08 ~ 23.08.08</span>
+                        <h1>박보마 <span>물질의 의식</span></h1>
+                        <p>Park Bo-ma: The Consciousness of Matter</p>
+                        <button class="btn">전시보기</button>
+                    </div>
+
+                    <img src="img/박보마.jpg" alt="">
                 </div>
             </div>
 
