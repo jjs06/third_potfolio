@@ -1,10 +1,15 @@
 $(function () {
+    let bg = ['img/건물_4.jpg','img/Edward_Hopper_4.jpg','img/Alphonse_Mucha_4.jpg','img/밀리야_밀스타인1.jpg','img/박보마1.jpg'];
 
+    let h = $('.s').innerHeight();
     // page index
     let page = $('.s').eq(0).attr('data-value');
     let total = $('.s').length;
     $('.page').html(page + ' / ' + total);
 
+    for(let i= 0; i < bg.length; i++){
+        $('.s').eq(i).css('background-image', `url(${bg[i]})`);         
+    }
     // click slide
 
     function up(){
@@ -16,8 +21,8 @@ $(function () {
         $('.page').html(page + ' / ' + total);
 
         $('.slide>.s:last').prependTo('.slide');
-        $('.slide').css({ marginTop: '-963px' });
-        $('.slide').stop().animate({ marginTop: 0 }, 600);
+        $('.slide').css({ marginTop: -h });
+        $('.slide').stop().animate({ marginTop: 0 }, 500);
     }
 
     function down(){
@@ -28,13 +33,13 @@ $(function () {
         }
         $('.page').html(page + ' / ' + total);
 
-        $('.slide').stop().animate({ marginTop: '-963px' }, 600, function () {
+        $('.slide').stop().animate({ marginTop: -h }, 500, function () {
             $('.slide>.s:first').appendTo('.slide');
             $('.slide').css({ marginTop: 0 });
         });
     }
 
-    // setInterval(down,3500);
+    setInterval(down,3500);
 
     $('.up').on('click', function () {
         up();
@@ -47,7 +52,7 @@ $(function () {
     // submenu
 
     $('.nt').click(function () {
-        $('html, body').animate({ scrollTop: 963 }, 1000);
+        $('html, body').animate({ scrollTop: 1143 }, 1000);
 
         return false;
     });

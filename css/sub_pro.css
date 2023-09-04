@@ -1,3 +1,1152 @@
 @charset "utf-8";
 
-body{background-color: #000;}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+
+@media (max-width:488px) {
+
+    .prev,
+    .next {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #7E49F2;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev img,
+    .next img {
+        width: 50%;
+    }
+
+    #section h3 {
+        font-size: 24px;
+    }
+
+    #section h4 {
+        font-size: 20px;
+    }
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 300px;
+    }
+
+    #section .sc1 {
+        width: 78.125%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    #section .sc1 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 54px;
+        position: relative;
+    }
+
+    #section .sc1 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc1>article {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section .sc1 article:nth-of-type(1) {
+        margin-bottom: 90px;
+    }
+
+    #section .sc1>article .m {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article .m img {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox h4 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article>.tbox p {
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    #section .sc1>article>.tbox table {
+        width: 100%;
+        height: 150px;
+        text-align: left;
+    }
+
+    #section .sc1>article>.tbox table th {
+        color: #777;
+        font-size: 10px;
+    }
+
+    #section .sc1>article>.tbox table td {
+        font-size: 12px;
+    }
+
+    #section .sc2 {
+        width: 78.125%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 150px;
+    }
+
+    #section .sc2 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 90px;
+        position: relative;
+    }
+
+    #section .sc2 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc2>.sw {
+        width: 100%;
+        position: relative;
+    }
+
+    #section .sc2>.sw>.sd {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section .sc2>.sw>.sd>.s {
+        width: 100%;
+        height: auto;
+    }
+
+    #section .sc2>.sw>.sd>.s:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s img {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s span {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    #footer {
+        background-color: transparent;
+        color: #fff;
+      }
+    
+      #footer-inside{
+        background-color: transparent;
+      }
+}
+
+@media (min-width: 489px) and (max-width:576px) {
+
+    .prev,
+    .next {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #7E49F2;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev img,
+    .next img {
+        width: 50%;
+    }
+
+    #section h3 {
+        font-size: 24px;
+    }
+
+    #section h4 {
+        font-size: 20px;
+    }
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 300px;
+    }
+
+    #section .sc1 {
+        width: 78.125%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    #section .sc1 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 54px;
+        position: relative;
+    }
+
+    #section .sc1 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc1>article {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section .sc1 article:nth-of-type(1) {
+        margin-bottom: 90px;
+    }
+
+    #section .sc1>article .m {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article .m img {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox h4 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article>.tbox p {
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    #section .sc1>article>.tbox table {
+        width: 100%;
+        height: 150px;
+        text-align: left;
+    }
+
+    #section .sc1>article>.tbox table th {
+        color: #777;
+        font-size: 12px;
+    }
+
+    #section .sc1>article>.tbox table td {
+        font-size: 14px;
+    }
+
+    #section .sc2 {
+        width: 78.125%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 150px;
+    }
+
+    #section .sc2 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 90px;
+        position: relative;
+    }
+
+    #section .sc2 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc2>.sw {
+        width: 100%;
+        position: relative;
+    }
+
+    #section .sc2>.sw>.sd {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section .sc2>.sw>.sd>.s {
+        width: 100%;
+        height: auto;
+    }
+
+    #section .sc2>.sw>.sd>.s:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s img {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s span {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px) {
+
+    .prev,
+    .next {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #7E49F2;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev img,
+    .next img {
+        width: 50%;
+    }
+
+    #section h3 {
+        font-size: 28px;
+    }
+
+    #section h4 {
+        font-size: 24px;
+    }
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 300px;
+    }
+
+    #section .sc1 {
+        width: 78.125%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    #section .sc1 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 58px;
+        position: relative;
+    }
+
+    #section .sc1 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc1>article {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section .sc1 article:nth-of-type(1) {
+        margin-bottom: 90px;
+    }
+
+    #section .sc1>article .m {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article .m img {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox h4 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article>.tbox p {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #section .sc1>article>.tbox table {
+        width: 420px;
+        height: 150px;
+        text-align: left;
+    }
+
+    #section .sc1>article>.tbox table th {
+        color: #777;
+        font-size: 14px;
+    }
+
+    #section .sc1>article>.tbox table td {
+        font-size: 16px;
+    }
+
+    #section .sc2 {
+        width: 78.125%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 200px;
+    }
+
+    #section .sc2 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 90px;
+        position: relative;
+    }
+
+    #section .sc2 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc2>.sw {
+        width: 100%;
+        position: relative;
+    }
+
+    #section .sc2>.sw>.sd {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section .sc2>.sw>.sd>.s {
+        width: 100%;
+        height: auto;
+    }
+
+    #section .sc2>.sw>.sd>.s:not(:last-child) {
+        padding-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s img {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s span {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        background-color: transparent;
+        color: #fff;
+      }
+    
+      #footer-inside{
+        background-color: transparent;
+      }
+}
+
+@media (min-width: 769px) and (max-width:992px) {
+
+    .prev,
+    .next {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #7E49F2;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prev {
+        left: 0;
+        display: none;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev img,
+    .next img {
+        width: 50%;
+    }
+
+    #section h3 {
+        font-size: 38px;
+    }
+
+    #section h4 {
+        font-size: 26px;
+    }
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 300px;
+    }
+
+    #section .sc1 {
+        width: 78.125%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    #section .sc1 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 68px;
+        position: relative;
+    }
+
+    #section .sc1 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc1>article {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section .sc1 article:nth-of-type(1) {
+        margin-bottom: 90px;
+    }
+
+    #section .sc1>article .m {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article .m img {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox h4 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article>.tbox p {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    #section .sc1>article>.tbox table {
+        width: 450px;
+        height: 150px;
+        text-align: left;
+    }
+
+    #section .sc1>article>.tbox table th {
+        color: #777;
+        font-size: 16px;
+    }
+
+    #section .sc1>article>.tbox table td {
+        font-size: 18px;
+    }
+
+    #section .sc2 {
+        width: 78.125%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 200px;
+    }
+
+    #section .sc2 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 90px;
+        position: relative;
+    }
+
+    #section .sc2 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc2>.sw {
+        width: 100%;
+        position: relative;
+    }
+
+    #section .sc2>.sw>.sd {
+        width: 300%;
+        height: auto;
+        display: flex;
+    }
+
+    #section .sc2>.sw>.sd>.s {
+        width: 16.67%;
+        height: auto;
+        padding-right: 0.667%;
+    }
+
+    #section .sc2>.sw>.sd>.s img {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s span {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        background-color: transparent;
+        color: #fff;
+      }
+    
+      #footer-inside{
+        background-color: transparent;
+      }
+}
+
+@media (min-width: 993px) and (max-width:1500px) {
+
+    .prev,
+    .next {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #7E49F2;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prev {
+        left: 0;
+        display: none;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev img,
+    .next img {
+        width: 50%;
+    }
+
+    #section h3 {
+        font-size: 45px;
+    }
+
+    #section h4 {
+        font-size: 30px;
+    }
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 300px;
+    }
+
+    #section .sc1 {
+        width: 78.125%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    #section .sc1 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 75px;
+        position: relative;
+    }
+
+    #section .sc1 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc1>article {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #section .sc1 article:nth-of-type(1) {
+        margin-bottom: 90px;
+    }
+
+    #section .sc1>article .m {
+        width: 36%;
+        height: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article .m img {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox {
+        width: 54%;
+    }
+
+    #section .sc1>article>.tbox h4 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article>.tbox p {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    #section .sc1>article>.tbox table {
+        width: 450px;
+        height: 150px;
+        text-align: left;
+    }
+
+    #section .sc1>article>.tbox table th {
+        color: #777;
+        font-size: 16px;
+    }
+
+    #section .sc1>article>.tbox table td {
+        font-size: 18px;
+    }
+
+    #section .sc2 {
+        width: 78.125%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 200px;
+    }
+
+    #section .sc2 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 90px;
+        position: relative;
+    }
+
+    #section .sc2 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc2>.sw {
+        width: 100%;
+        position: relative;
+    }
+
+    #section .sc2>.sw>.sd {
+        width: 200%;
+        height: auto;
+        display: flex;
+    }
+
+    #section .sc2>.sw>.sd>.s {
+        width: 16.67%;
+        height: auto;
+        padding-right: 0.667%;
+    }
+
+    #section .sc2>.sw>.sd>.s img {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s span {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        background-color: transparent;
+        color: #fff;
+      }
+    
+      #footer-inside{
+        background-color: transparent;
+      }
+}
+
+@media (min-width: 1501px) {
+
+    .prev,
+    .next {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: #7E49F2;
+        border-radius: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .prev {
+        left: 0;
+        display: none;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .prev img,
+    .next img {
+        width: 50%;
+    }
+
+    #section h3 {
+        font-size: 45px;
+    }
+
+    #section h4 {
+        font-size: 30px;
+    }
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 300px;
+    }
+
+    #section .sc1 {
+        width: 1500px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    #section .sc1 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 90px;
+        position: relative;
+    }
+
+    #section .sc1 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc1>article {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #section .sc1 article:nth-of-type(1) {
+        margin-bottom: 90px;
+    }
+
+    #section .sc1>article .m {
+        width: 540px;
+        height: 360px;
+        background-color: skyblue;
+    }
+
+    #section .sc1>article .m img {
+        width: 100%;
+    }
+
+    #section .sc1>article>.tbox {
+        width: 870px;
+    }
+
+    #section .sc1>article>.tbox h4 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #section .sc1>article>.tbox p {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    #section .sc1>article>.tbox table {
+        width: 450px;
+        height: 150px;
+        text-align: left;
+    }
+
+    #section .sc1>article>.tbox table th {
+        color: #777;
+        font-size: 16px;
+    }
+
+    #section .sc1>article>.tbox table td {
+        font-size: 18px;
+    }
+
+    #section .sc2 {
+        width: 1500px;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 250px;
+    }
+
+    #section .sc2 h3 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 90px;
+        line-height: 90px;
+        position: relative;
+    }
+
+    #section .sc2 h3::after {
+        content: "";
+        background-color: #777;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #section .sc2>.sw {
+        width: 100%;
+        position: relative;
+    }
+
+    #section .sc2>.sw>.sd {
+        width: 200%;
+        height: auto;
+        display: flex;
+    }
+
+    #section .sc2>.sw>.sd>.s {
+        width: 16.67%;
+        height: auto;
+        padding-right: 0.667%;
+    }
+
+    #section .sc2>.sw>.sd>.s img {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    #section .sc2>.sw>.sd>.s span {
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        background-color: transparent;
+        color: #fff;
+      }
+    
+      #footer-inside{
+        background-color: transparent;
+      }
+}

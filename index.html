@@ -4,27 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
+    <title>Epoch.p</title>
 
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pr3.css">
+    <link rel="icon" href="img/fabicon.png">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/m_menu.js"></script>
     <script src="js/m_slide.js"></script>
-</head>
+    <script src="js/slide.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/exhibition_1.js"></script>
+
+
 </head>
 
 <body>
     <div id="wrap">
         <header>
+            <a href="index.html">
             <div class="logo">
-                <img src="img/logo1.png" alt="">
+                <img src="./img/logo1.png" alt="" class="logoimg">
             </div>
+            </a>
             <div id="m_menu">
                 <p class="login">LOGIN</p>
                 <div class="surch">
-                    <img src="img/surch.png" alt="surch">
+                    <img src="./img/surch.png" alt="surch" class="surch">
                 </div>
                 <div class="m_list">
                     <div id="m_icon" class="ic">
@@ -42,14 +50,14 @@
                         <span class="t">Epoch.P</span>
                         <ul class="sub">
                             <li>
-                                <a href="#">
-                                    소개 
+                                <a href="sub.html">
+                                    소개
                                     <span>About us</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    관람 
+                                <a href="sub.html">
+                                    관람
                                     <span>visit</span>
                                 </a>
                             </li>
@@ -59,19 +67,19 @@
                         <span class="t">Exhibition</span>
                         <ul class="sub">
                             <li>
-                                <a href="#">
+                                <a href="exhibition.html">
                                     진행중인전시
                                     <span>Current</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    예정전시 
+                                <a href="sub_1.html">
+                                    예정전시
                                     <span>Upcoming</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="sub_1.html">
                                     지난전시
                                     <span>past</span>
                                 </a>
@@ -82,7 +90,7 @@
                         <span class="t">Program</span>
                         <ul class="sub">
                             <li>
-                                <a href="#">
+                                <a href="sub_pro.html">
                                     교육/체험프로그램
                                     <span>Past & current</span>
                                 </a>
@@ -95,15 +103,15 @@
 
 
         <div id="slider">
-            <div class="slide">
 
+            <div class="slide">
                 <div class="s" data-value="1">
 
                     <div class="con">
                         <img src="img/logo2.svg" alt="">
                     </div>
 
-                    <img src="img/건물_4.jpg" alt="">
+                    <!-- <img src="img/건물_4.jpg" alt=""> -->
 
 
                 </div>
@@ -111,13 +119,13 @@
                 <div class="s" data-value="2">
 
                     <div class="con">
-                        <span>Date 23.08.08 ~ 23.08.08</span>
-                        <h1>에드워드 호퍼 <span>길 위에서</span></h1>
-                        <p>Edward Hopper: On the road</p>
+                        <span>서울 SEOUL &nbsp; 23.08.08 ~ 23.08.08</span>
+                        <h1>길 위에서 <span>에드워드 호퍼</span></h1>
+                        <p>Edward Hopper : On the road</p>
                         <button class="btn">전시보기</button>
                     </div>
 
-                    <img src="img/Edward Hopper_4.jpg" alt="">
+                    <!-- <img src="img/Edward Hopper_4.jpg" alt=""> -->
 
 
                 </div>
@@ -125,38 +133,36 @@
                 <div class="s" data-value="3">
 
                     <div class="con">
-                        <span>Date 23.08.08 ~ 23.08.08</span>
+                        <span>수원 SUWON &nbsp; 23.08.08 ~ 23.08.08</span>
                         <h1>알폰스 무하 이모션 </h1>
                         <p>Alphonse Mucha eMotion</p>
                         <button class="btn">전시보기</button>
                     </div>
 
-                    <img src="img/Alphonse Mucha_3.jpg" alt="">
+                    <!-- <img src="img/Alphonse Mucha_3.jpg" alt=""> -->
                 </div>
 
 
                 <div class="s" data-value="4">
 
                     <div class="con">
-                        <span>Date 23.08.08 ~ 23.08.08</span>
-                        <h1>일리야 밀스타인 <span>기억의 캐비닛</span></h1>
+                        <span>서울 SEOUL &nbsp; 23.08.08 ~ 23.08.08</span>
+                        <h1>기억의 캐비닛 <span>일리야 밀스타인</span></h1>
                         <p>Ilya Milstein : Memory Cabinet</p>
                         <button class="btn">전시보기</button>
                     </div>
-
-                    <img src="img/밀리야_밀스타인1.jpg" alt="">
                 </div>
 
                 <div class="s" data-value="5">
 
                     <div class="con">
-                        <span>Date 23.08.08 ~ 23.08.08</span>
-                        <h1>박보마 <span>물질의 의식</span></h1>
-                        <p>Park Bo-ma: The Consciousness of Matter</p>
+                        <span>수원 SUWON &nbsp; 23.08.08 ~ 23.08.08</span>
+                        <h1>물질의 의식 <span>박보마</span></h1>
+                        <p>Pak Bo Ma : The Consciousness of Matter</p>
                         <button class="btn">전시보기</button>
                     </div>
 
-                    <img src="img/박보마.jpg" alt="">
+                    <!-- <img src="img/박보마1.jpg" alt=""> -->
                 </div>
             </div>
 
@@ -175,9 +181,287 @@
                     <div class="n"></div>
                 </div>
             </div>
+        </div>
+
+        <!-- 박서연 -->
+
+        <div id="section">
+            <div class="title">
+                <p>다채로운 작품을 경험하세요</p>
+                <h2>INSIGHT</h2>
+            </div>
+
+            <div id="content">
+                <div id="Sequence">
+                    <span class="prev">
+                        <img src="img/arrow1.png" alt="">
+                        <img src="img/arrow2.png" alt="">
+                    </span>
+                </div>
+
+                <div id="slideBox">
+                    <div class="slide_2">
+
+                        <div class="img_box1 all">
+                            <div class="image1">
+                                <img src="img/알폰스 무하_1.jpg " alt="">
+                            </div>
+
+                            <div class="text_box1">
+                                <p>알폰스 무하</p>
+                                <h5>Spring</h5>
+                            </div>
+                        </div>
+
+
+                        <div class="img_box2 all">
+                            <div class="image2">
+                                <img src="img/알폰스 무하.jpg" alt="">
+                            </div>
+
+                            <div class="text_box2">
+                                <p>알폰스 무하</p>
+                                <h5>Lady with a Daisy</h5>
+                            </div>
+                        </div>
+
+                        <div class="img_box1 all">
+                            <div class="image1">
+                                <img src="img/에드워드 호퍼_5.jpg" alt="">
+                            </div>
+
+                            <div class="text_box1">
+                                <p>에드워드 호퍼</p>
+                                <h5>계단</h5>
+                            </div>
+                        </div>
+
+                        <div class="img_box2 all">
+                            <div class="image2">
+                                <img src="img/에드워드 호퍼_2.jpg" alt="">
+                            </div>
+
+                            <div class="text_box2">
+                                <p>에드워드 호퍼</p>
+                                <h5>오건킷의 바다</h5>
+                            </div>
+                        </div>
+
+                        <div class="img_box1 all">
+                            <div class="image1">
+                                <img src="img/일리야 밀스타인_2.jpg" alt="">
+                            </div>
+
+                            <div class="text_box1">
+                                <p>일리야 밀스타인</p>
+                                <h5>LEAVING THE COUNTRY</h5>
+                            </div>
+                        </div>
+
+                        <div class="img_box2 all">
+                            <div class="image2">
+                                <img src="img/일리야 밀스타인_1.jpg" alt="">
+                            </div>
+
+                            <div class="text_box2">
+                                <p>일리야 밀스타인</p>
+                                <h5>NEW GALLERY</h5>
+                            </div>
+                        </div>
+
+
+                        <div class="img_box1 all">
+                            <div class="image1">
+                                <img src="img/박보마_2.jpg" alt="">
+                            </div>
+
+                            <div class="text_box1">
+                                <p>박보마</p>
+                                <h5>물질의 의식</h5>
+                            </div>
+                        </div>
+
+
+                        <div class="img_box2 all">
+                            <div class="image2">
+                                <img src="img/박보마_1.jpg" alt="">
+                            </div>
+
+                            <div class="text_box2">
+                                <p>박보마</p>
+                                <h5>물질의 의식</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="btn" class="btn_all">
+                <div id="color" class="color"></div>
+                <p class="p">+ view more</p>
+            </div>
 
         </div>
+
+        <!-- 윤동일 -->
+
+        <!-- w100% -->
+
+        <div class="ricout">
+            <!-- 1500px -->
+            <div class="imgbox">
+                <img src="img/전시장.png" alt="">
+            </div>
+
+            <article>
+                <h1>EPOCH.P</h1>
+                <div class="textbox">
+
+                    <h3>About Us</h3>
+                    <p class="text">모두의 예술적 지평이 넓어 질 수 있도록 <br>
+                        양질의 문화 콘텐츠를 제공하고자 하며, <br>
+                        깊이 있는 문화예술 지원과 나눔을 목표로 운영하고 있습니다.
+                    </p>
+
+                    <div class="btn_all" id="btn_sub">
+                        <div class="color"></div>
+                        <p class="p">+ view more</p>
+                    </div>
+                </div>
+                <img src="img/about.png" alt="" class="about_img">
+            </article>
+        </div>
+
+        <!-- 최윤화 -->
+
+        <!-- home4 artist -->
+        <section id="section1">
+            <div class="title">
+                <p>개성있는 작가들을 만나보세요</p>
+                <h2>ARTIST</h2>
+            </div>
+            <div id="home4">
+                <a href="">
+                    <div class="home4-artist">
+                        <div class="home4-artist-country">
+                            <h3>American</h3>
+                        </div>
+                        <div class="home4-artist-name">
+                            <h1>Edward Hopper</h1>
+                        </div>
+                        <div class="home4-artist-img" style="background-image: url(img/EdwardHopper_1.jpeg);"></div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="home4-artist">
+                        <div class="home4-artist-country">
+                            <h3>Czech</h3>
+                        </div>
+                        <div class="home4-artist-name">
+                            <h1>Alfons Maria Mucha</h1>
+                        </div>
+                        <div class="home4-artist-img" style="background-image: url(img/AlfonsMariaMucha_1.jpg);"></div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="home4-artist">
+                        <div class="home4-artist-country">
+                            <h3>italy</h3>
+                        </div>
+                        <div class="home4-artist-name">
+                            <h1>Ilya Milstein</h1>
+                        </div>
+                        <div class="home4-artist-img" style="background-image: url(img/ilyamilstein_1.jpg);"></div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="home4-artist">
+                        <div class="home4-artist-country">
+                            <h3>korea</h3>
+                        </div>
+                        <div class="home4-artist-name">
+                            <h1>Pak BO MA</h1>
+                        </div>
+                        <div class="home4-artist-img" style="background-image: url(img/pakboma_1.jpg);"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- program -->
+
+        <section id="section2">
+            <div class="title">
+                <p><b>APOCH.P</b>만의 프로그램을 만나보세요</p>
+                <h2>PROGRAM</h2>
+            </div>
+            <div class="content">
+                <a href="" class="con_a">
+                    <div class="content-box">
+                        <div class="imgbox">
+                            <img src="img/program_1.jpg" alt="program">
+                        </div>
+                        <div class="textbox">
+                            <h4>
+                                스페이스K 미술관 요가 <br>
+                                Museum Yoga
+                            </h4>
+                            <span>2023.07.23 - 2023.10.08</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="con_a">
+                    <div class="content-box">
+                        <div class="imgbox">
+                            <img src="img/program_2.jpg" alt="program">
+                        </div>
+                        <div class="textbox">
+                            <h4>
+                                작가x큐레이터 대화 - 제이디 차 x 이장욱(수석 큐레이터) <br>
+                                Artist's Conversations - Zadie Xa x Jang-Uk Lee
+                            </h4>
+                            <span>2023.09.05 - 2023.09.05</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="btn_all">
+                <div class="color"></div>
+                <p class="p">+ see all programs</p>
+            </div>
+        </section>
+
+
+        <!-- 윤동일footer -->
+
+        <div id="footer">
+            <div id="footer-inside">
+
+                <div class="footer-inside-each">book an appointment</div>
+
+
+
+                <div class="footer-inside-each">contact</div>
+
+
+                <div class="footer-inside-each">artsy</div>
+
+
+                <div class="footer-inside-each">instagram</div>
+
+
+                <div class="footer-inside-each">vimeo</div>
+
+            </div>
+        </div>
+
     </div>
+
 </body>
 
 </html>

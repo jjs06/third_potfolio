@@ -1,33 +1,2644 @@
 @charset "utf-8";
 
-h1{font-size: 60px; color: #fff;}
+@media (max-width: 576px) {
+    /* html{font-size: 1vw;} */
 
-/* slider */
+    .title {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10%;
+    }
 
-#slider{width: 100%; height: 963px; overflow: hidden; position: relative;}
-#slider .slide{width: 100%; position: absolute;}
-#slider .slide>.s{width: 100%; height: 963px; position: relative;}
+    .title>p {
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-family: 'Noto Sans KR';
+    }
 
-#slider .slide>.s>.img{width: 100%; position: absolute;}
+    .title>h2 {
+        text-align: center;
+        font-size: 50px;
+    }
 
-#slider .slide>.s>.con{width: 1200px; height: 963px; position: absolute; bottom: 0; left: 50%; transform:translateX(-50%); display: flex; flex-direction: column; justify-content: center; z-index: 1;}
+    /* slider */
 
-#slider .slide>.s>.con span{font-size: 20px; color: #fff; margin-bottom: 15px;}
+    #slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        margin-bottom: 180px;
+    }
 
-#slider .slide>.s>.con h1 span{font-size: 30px; color: #fff; margin-bottom: 0;}
-#slider .slide>.s>.con p{font-size: 48px; color: #fff; margin-bottom: 90px;}
+    #slider .slide {
+        width: 100%;
+        position: absolute;
+    }
 
-#slider .s_menu{width: 30px; height: 963px; position: absolute; top: 0; right: 3%; z-index: 2;}
+    #slider .slide>.s {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
 
-#slider .s_menu>.pg{width: 30px; height: 150px; position: absolute; top: 50%; transform: translateY(-50%);}
-#slider .s_menu>.pg>.page{width: 30px; height: 30px; margin-bottom: 30px; text-align: center; line-height: 30px; font-size: 14px; font-weight: 500;}
+    #slider .slide>.s img {
+        height: 100vh;
+    }
 
-#slider .s_menu>.nt{width: 30px; height: 150px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; cursor: pointer; position: absolute; bottom: 0;}
-#slider .s_menu>.nt p{width: 30px; height: 45px; font-size: 16px;  writing-mode: vertical-rl; line-height: 30px; font-weight: 500;}
+    #slider .slide>.s>.con {
+        width: 62.5%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'NotoSansKR';
+    }
 
-#slider .s_menu>.nt>.n{content: ''; width: 1px; height: 90px; background-color: #fff;  animation-name: n_ani; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+    #slider .slide>.s>.con span {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
 
-@keyframes n_ani{
-    from{height: 90px;}
-    to{height: 0;}
+    #slider .slide>.s>.con h1 span {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 0;
+        word-break: keep-all;
+    }
+
+    #slider .slide>.s>.con h1 {
+        font-size: 35px;
+        color: #fff;
+        letter-spacing: -1px;
+    }
+
+    #slider .slide>.s>.con p {
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 60px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+
+    #slider .s_menu {
+        width: 30px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        z-index: 2;
+    }
+
+    #slider .s_menu>.pg {
+        width: 30px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #slider .s_menu>.pg>.page {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt {
+        width: 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #slider .s_menu>.nt p {
+        width: 30px;
+        height: 45px;
+        font-size: 16px;
+        writing-mode: vertical-rl;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt>.n {
+        content: '';
+        width: 1px;
+        height: 90px;
+        background-color: #fff;
+        animation-name: n_ani;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes n_ani {
+        from {
+            height: 90px;
+        }
+
+        to {
+            height: 0;
+        }
+    }
+
+    #section_all {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
+    /* #section - 박서연 */
+
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 180px;
+        transform: translateY(-100px);
+        transition: all 2s;
+        opacity: 0;
+    }
+
+    #content {
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Sequence {
+        width: 10%;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prev {
+        transition: all 0.5s;
+    }
+
+    .prev>img:nth-of-type(2) {
+        display: none;
+    }
+
+    .prev>img:nth-of-type(1) {
+        display: block;
+    }
+
+    .prev:hover {
+        cursor: pointer;
+        color: #7E49F2;
+        transform: scale(1.4);
+    }
+
+    .all {
+        transition: all 0.4s;
+    }
+
+    .all:hover {
+        transform: scale(0.96);
+    }
+
+    #slideBox {
+        width: 90%;
+        height: 560px;
+        /* background-color: gray; */
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide_2 {
+        width: 750%;
+
+    }
+
+    .img_box1 {
+        width: 12.5%;
+        height: 560px;
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image1 {
+        width: 100%;
+        height: 480px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image1>img {
+        width: 100%;
+    }
+
+    .text_box1 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box1 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .img_box2 {
+        width: 12.5%;
+        height: 560px;
+        /* background-color: red; */
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 350px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image2>img {
+        width: 100%;
+    }
+
+    .text_box2 {
+        width: 100%;
+        height: 80px;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box2 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    /* recount-윤동일 */
+
+    .ricout {
+        width: 94%;
+        height: 94.79167vw;
+        position: relative;
+        transform: translateY(-50px);
+        transition: all 1s;
+        opacity: 0;
+        z-index: 5;
+    }
+
+    .ricout .imgbox {
+        position: absolute;
+        z-index: 3;
+        width: 90%;
+        height: 42.1875vw;
+        overflow: hidden;
+        top: 9.58334%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ricout .imgbox img {
+        width: 100%;
+    }
+
+    .ricout article {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 88.3334vw;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: flex-end;
+        opacity: 0.8;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ricout article h1 {
+        position: absolute;
+        top: -7.5625vw;
+        right: 0;
+        font-size: 8vw;
+        color: #e6e6e6;
+        opacity: 0.5;
+    }
+
+    .ricout .textbox {
+        width: 90%;
+        height: auto;
+    }
+
+    .ricout .textbox .text {
+        font-size: 16px;
+        color: #000;
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-family: 'Noto Sans KR';
+    }
+
+    .ricout article h2 {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        font-size: 100px;
+        text-align: right;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .about_img {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        width: 40%;
+        z-index: -2;
+    }
+
+
+    /* #secti0n1,#section2-최윤화 */
+
+    #section1 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    /* home4 artist */
+    #home4 {
+        width: 100%;
+        height: 960px;
+        background-color: #EEECEA;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home4 a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home4-artist {
+        width: 78.125%;
+        height: 240px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .home4-artist-country {
+        width: 20%;
+        height: 100%;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        align-items: center;
+    }
+
+    .home4-artist-country h3 {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    .home4-artist-name {
+        width: 80%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: .2s ease-in-out;
+    }
+
+    .home4-artist-name h1 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 35px;
+        color: #1f1f1f;
+        text-align: right;
+    }
+
+    .home4-artist-img {
+        width: 80%;
+        height: 720px;
+        position: absolute;
+        margin-top: -260px;
+        opacity: 0;
+        background-size: cover;
+        z-index: 2;
+        transition: .2s ease-in-out;
+        background-position: center;
+        display: none;
+    }
+
+    .home4-artist-name:hover+.home4-artist-img {
+        opacity: 1;
+    }
+
+    /* progrem */
+
+    .content {
+        width: 78.125%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .con_a {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .content-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #section2 .imgbox {
+        width: 100%;
+        height: 82%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+    #section2 .imgbox img {
+        width: 100%;
+
+    }
+
+    #section2 .textbox {
+        width: 100%;
+        height: 15%;
+    }
+
+    #section2 .textbox span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    #section2 .textbox h4 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (min-width:577px) and (max-width: 768px) {
+    /* html{font-size: 1vw;} */
+
+    .title {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10%;
+    }
+
+    .title>p {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-family: 'Noto Sans KR';
+    }
+
+    .title>h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+
+    /* slider */
+
+    #slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        margin-bottom: 180px;
+    }
+
+    #slider .slide {
+        width: 100%;
+        position: absolute;
+    }
+
+    #slider .slide>.s {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    #slider .slide>.s img {
+        height: 100vh;
+    }
+
+    #slider .slide>.s>.con {
+        width: 62.5%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'NotoSansKR';
+    }
+
+    #slider .slide>.s>.con span {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
+    #slider .slide>.s>.con h1 span {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    #slider .slide>.s>.con h1 {
+        font-size: 40px;
+        color: #fff;
+        letter-spacing: -1px;
+    }
+
+    #slider .slide>.s>.con p {
+        font-size: 28px;
+        color: #fff;
+        margin-bottom: 60px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+
+    #slider .s_menu {
+        width: 30px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        z-index: 2;
+    }
+
+    #slider .s_menu>.pg {
+        width: 30px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #slider .s_menu>.pg>.page {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt {
+        width: 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #slider .s_menu>.nt p {
+        width: 30px;
+        height: 45px;
+        font-size: 16px;
+        writing-mode: vertical-rl;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt>.n {
+        content: '';
+        width: 1px;
+        height: 90px;
+        background-color: #fff;
+        animation-name: n_ani;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes n_ani {
+        from {
+            height: 90px;
+        }
+
+        to {
+            height: 0;
+        }
+    }
+
+    #section_all {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #section - 박서연 */
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 180px;
+        transform: translateY(-100px);
+        transition: all 2s;
+        opacity: 0;
+    }
+
+    #content {
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Sequence {
+        width: 10%;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prev {
+        transition: all 0.5s;
+    }
+
+    .prev>img:nth-of-type(2) {
+        display: none;
+    }
+
+    .prev>img:nth-of-type(1) {
+        display: block;
+    }
+
+    .prev:hover {
+        cursor: pointer;
+        color: #7E49F2;
+        transform: scale(1.4);
+    }
+
+    .all {
+        transition: all 0.4s;
+    }
+
+    .all:hover {
+        transform: scale(0.96);
+    }
+
+    #slideBox {
+        width: 90%;
+        height: 560px;
+        /* background-color: gray; */
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide_2 {
+        width: 750%;
+
+    }
+
+    .img_box1 {
+        width: 12.5%;
+        height: 560px;
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image1 {
+        width: 100%;
+        height: 480px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image1>img {
+        width: 100%;
+    }
+
+    .text_box1 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box1 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .img_box2 {
+        width: 12.5%;
+        height: 560px;
+        /* background-color: red; */
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 350px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image2>img {
+        width: 100%;
+    }
+
+    .text_box2 {
+        width: 100%;
+        height: 80px;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box2 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    /* recount-윤동일 */
+
+    .ricout {
+        width: 78.125%;
+        height: 102.86458333vw;
+        position: relative;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .ricout .imgbox {
+        position: absolute;
+        z-index: 3;
+        width: 90%;
+        height: 42.1875vw;
+        overflow: hidden;
+        top: 13%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ricout .imgbox img {
+        width: 100%;
+    }
+
+    .ricout article {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 92.31770833vw;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: flex-end;
+        opacity: 0.8;
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3.125vw;
+    }
+
+    .ricout article h1 {
+        position: absolute;
+        top: -8vw;
+        right: 0;
+        color: #e6e6e6;
+        opacity: 0.5;
+        font-size: 66px;
+    }
+
+    .ricout .textbox {
+        width: 90%;
+        height: auto;
+    }
+    .ricout .textbox h3{ margin-bottom: 30px;}
+
+    .ricout .textbox .text {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-family: 'Noto Sans KR';
+    }
+
+
+    .about_img {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        width: 40%;
+        z-index: -2;
+    }
+
+
+    /* #secti0n1,#section2-최윤화 */
+
+    #section1 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    /* home4 artist */
+    #home4 {
+        width: 100%;
+        height: 960px;
+        background-color: #EEECEA;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home4 a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home4-artist {
+        width: 78.125%;
+        height: 240px;
+        display: flex;
+        position: relative;
+    }
+
+    .home4-artist-country {
+        width: 20%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        align-items: center;
+    }
+
+    .home4-artist-country h3 {
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    .home4-artist-name {
+        width: 80%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: .2s ease-in-out;
+    }
+
+    .home4-artist-name h1 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 50px;
+        color: #1f1f1f;
+        text-align: right;
+    }
+
+    .home4-artist-img {
+        width: 420px;
+        height: 620px;
+        position: absolute;
+        margin-top: -260px;
+        opacity: 0;
+        background-size: cover;
+        z-index: 2;
+        transition: .2s ease-in-out;
+        background-position: center;
+    }
+
+    .home4-artist-name:hover+.home4-artist-img {
+        opacity: 1;
+    }
+
+    /* progrem */
+
+    .content {
+        width: 78.125%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .con_a {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .content-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #section2 .imgbox {
+        width: 100%;
+        height: 82%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+    #section2 .imgbox img {
+        width: 100%;
+
+    }
+
+    #section2 .textbox {
+        width: 100%;
+        height: 15%;
+    }
+
+    #section2 .textbox span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    /* html{font-size: 1vw;} */
+
+    .title {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10%;
+    }
+
+    .title>p {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+
+    /* slider */
+
+    #slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        margin-bottom: 180px;
+    }
+
+    #slider .slide {
+        width: 100%;
+        position: absolute;
+    }
+
+    #slider .slide>.s {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    #slider .slide>.s img {
+        height: 100vh;
+    }
+
+    #slider .slide>.s>.con {
+        width: 62.5%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'NotoSansKR';
+    }
+
+    #slider .slide>.s>.con span {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
+    #slider .slide>.s>.con h1 {
+        font-size: 55px;
+        color: #fff;
+        letter-spacing: -1px;
+    }
+
+    #slider .slide>.s>.con h1 span {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    #slider .slide>.s>.con p {
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 60px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+
+    #slider .s_menu {
+        width: 30px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        z-index: 2;
+    }
+
+    #slider .s_menu>.pg {
+        width: 30px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #slider .s_menu>.pg>.page {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt {
+        width: 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #slider .s_menu>.nt p {
+        width: 30px;
+        height: 45px;
+        font-size: 16px;
+        writing-mode: vertical-rl;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt>.n {
+        content: '';
+        width: 1px;
+        height: 90px;
+        background-color: #fff;
+        animation-name: n_ani;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes n_ani {
+        from {
+            height: 90px;
+        }
+
+        to {
+            height: 0;
+        }
+    }
+
+    #section_all {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #section - 박서연 */
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 180px;
+        transform: translateY(-100px);
+        transition: all 2s;
+        opacity: 0;
+    }
+
+    #content {
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Sequence {
+        width: 10%;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prev {
+        transition: all 0.5s;
+    }
+
+    .prev>img:nth-of-type(2) {
+        display: none;
+    }
+
+    .prev>img:nth-of-type(1) {
+        display: block;
+    }
+
+    .prev:hover {
+        cursor: pointer;
+        color: #7E49F2;
+        transform: scale(1.4);
+    }
+
+    .all {
+        transition: all 0.4s;
+    }
+
+    .all:hover {
+        transform: scale(0.96);
+    }
+
+    #slideBox {
+        width: 90%;
+        height: 560px;
+        /* background-color: gray; */
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide_2 {
+        width: 350%;
+
+    }
+
+    .img_box1 {
+        width: 12.5%;
+        height: 560px;
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image1 {
+        width: 100%;
+        height: 420px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image1>img {
+        width: 100%;
+    }
+
+    .text_box1 {
+        width: 100%;
+        /* height: 80px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box1 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .img_box2 {
+        width: 12.5%;
+        height: 460px;
+        /* background-color: red; */
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 320px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image2>img {
+        width: 100%;
+    }
+
+    .text_box2 {
+        width: 100%;
+        /* height: 80px; */
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box2 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    /* recount-윤동일 */
+
+    .ricout {
+        width: 78.125%;
+        height: 720px;
+        position: relative;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .ricout .imgbox {
+        position: absolute;
+        z-index: 3;
+        width: 60%;
+        height: 28.125vw;
+        overflow: hidden;
+    }
+
+    .ricout .imgbox img {
+        width: 100%;
+    }
+
+    .ricout article {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        height: 600px;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: flex-end;
+        opacity: 0.8;
+        padding-top: 60px;
+    }
+
+    .ricout article h1 {
+        position: absolute;
+        top: -5.15625vw;
+        right: 0;
+        font-size: 5.3125vw;
+        color: #e6e6e6;
+        opacity: 0.5;
+        text-align: right;
+    }
+
+    .ricout .textbox {
+        width: 45%;
+        height: auto;
+    }
+
+    .ricout .textbox .text {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-family: 'Noto Sans KR';
+    }
+
+    .ricout article h2 {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        font-size: 100px;
+        text-align: right;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .about_img {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        width: 40%;
+        z-index: -2;
+    }
+
+
+    /* #secti0n1,#section2-최윤화 */
+
+    #section1 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+
+    .title>p {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    /* home4 artist */
+    #home4 {
+        width: 100%;
+        height: 960px;
+        background-color: #EEECEA;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home4 a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home4-artist {
+        width: 78.125%;
+        height: 240px;
+        display: flex;
+        position: relative;
+    }
+
+    .home4-artist-country {
+        width: 20%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        align-items: center;
+    }
+
+    .home4-artist-country h3 {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    .home4-artist-name {
+        width: 80%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: .2s ease-in-out;
+    }
+
+    .home4-artist-name h1 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 56px;
+        color: #1f1f1f;
+    }
+
+    .home4-artist-img {
+        width: 520px;
+        height: 720px;
+        position: absolute;
+        margin-top: -260px;
+        opacity: 0;
+        background-size: cover;
+        z-index: 2;
+        transition: .2s ease-in-out;
+        background-position: center;
+    }
+
+    .home4-artist-name:hover+.home4-artist-img {
+        opacity: 1;
+    }
+
+    /* progrem */
+
+    .content {
+        width: 78.125%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .con_a {
+        width: 47%;
+    }
+
+    .content-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #section2 .imgbox {
+        width: 100%;
+        height: 82%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+    #section2 .imgbox img {
+        width: 100%;
+
+    }
+
+    #section2 .textbox {
+        width: 100%;
+        height: 15%;
+    }
+
+    #section2 .textbox span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    #section2 .textbox h4 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1500px) {
+    /* html{font-size: 1vw;} */
+
+    .title {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10%;
+    }
+
+    .title>p {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+
+    /* slider */
+
+    #slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        margin-bottom: 180px;
+    }
+
+    #slider .slide {
+        width: 100%;
+        position: absolute;
+    }
+
+    #slider .slide>.s {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    #slider .slide>.s img {
+        height: 100vh;
+    }
+
+    #slider .slide>.s>.con {
+        width: 62.5%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'NotoSansKR';
+    }
+
+    #slider .slide>.s>.con span {
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
+    #slider .slide>.s>.con h1 span {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    #slider .slide>.s>.con h1 {
+        font-size: 65px;
+        color: #fff;
+        letter-spacing: -1px;
+    }
+
+    #slider .slide>.s>.con p {
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 60px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+
+    #slider .s_menu {
+        width: 30px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        z-index: 2;
+    }
+
+    #slider .s_menu>.pg {
+        width: 30px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #slider .s_menu>.pg>.page {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt {
+        width: 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #slider .s_menu>.nt p {
+        width: 30px;
+        height: 45px;
+        font-size: 16px;
+        writing-mode: vertical-rl;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt>.n {
+        content: '';
+        width: 1px;
+        height: 90px;
+        background-color: #fff;
+        animation-name: n_ani;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes n_ani {
+        from {
+            height: 90px;
+        }
+
+        to {
+            height: 0;
+        }
+    }
+
+    #section_all {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #section - 이서연 */
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 180px;
+        transform: translateY(-100px);
+        transition: all 2s;
+        opacity: 0;
+    }
+
+    #content {
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Sequence {
+        width: 10%;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prev {
+        transition: all 0.5s;
+    }
+
+    .prev>img:nth-of-type(2) {
+        display: none;
+    }
+
+    .prev>img:nth-of-type(1) {
+        display: block;
+    }
+
+    .prev:hover {
+        cursor: pointer;
+        color: #7E49F2;
+        transform: scale(1.4);
+    }
+
+    .all {
+        transition: all 0.4s;
+    }
+
+    .all:hover {
+        transform: scale(0.96);
+    }
+
+    #slideBox {
+        width: 90%;
+        height: 560px;
+        /* background-color: gray; */
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide_2 {
+        width: 300%;
+
+    }
+
+    .img_box1 {
+        width: 380px;
+        height: 560px;
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image1 {
+        width: 380px;
+        height: 480px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image1>img {
+        width: 100%;
+    }
+
+    .text_box1 {
+        width: 380px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box1 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .img_box2 {
+        width: 380px;
+        height: 460px;
+        /* background-color: red; */
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image2 {
+        width: 380px;
+        height: 350px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image2>img {
+        width: 100%;
+    }
+
+    .text_box2 {
+        width: 380px;
+        height: 80px;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box2 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    /* recount-윤동일 */
+
+    .ricout {
+        width: 78.125%;
+        height: 720px;
+        position: relative;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .ricout .imgbox {
+        position: absolute;
+        z-index: 3;
+        width: 60%;
+        height: 28.125vw;
+        overflow: hidden;
+    }
+
+    .ricout .imgbox img {
+        width: 100%;
+    }
+
+    .ricout article {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        height: 600px;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: flex-end;
+        opacity: 0.8;
+        padding-top: 60px;
+    }
+
+    .ricout article h1 {
+        position: absolute;
+        top: -5.15625vw;
+        right: 0;
+        font-size: 5.3125vw;
+        color: #e6e6e6;
+        opacity: 0.5;
+    }
+
+    .ricout .textbox {
+        width: 45%;
+        height: auto;
+    }
+
+    .ricout .textbox .text {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-family: 'Noto Sans KR';
+    }
+
+    .ricout article h2 {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        font-size: 100px;
+        text-align: right;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+    }
+
+    .about_img {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        width: 40%;
+        z-index: -2;
+    }
+
+
+    /* #secti0n1,#section2-최윤화 */
+
+    #section1 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+
+
+    .title>p {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    /* home4 artist */
+    #home4 {
+        width: 100%;
+        height: 960px;
+        background-color: #EEECEA;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home4 a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home4-artist {
+        width: 78.125%;
+        height: 240px;
+        display: flex;
+        position: relative;
+    }
+
+    .home4-artist-country {
+        width: 20%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        align-items: center;
+    }
+
+    .home4-artist-country h3 {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    .home4-artist-name {
+        width: 80%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: .2s ease-in-out;
+    }
+
+    .home4-artist-name h1 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 70px;
+        color: #1f1f1f;
+        text-align: right;
+    }
+
+    .home4-artist-img {
+        width: 520px;
+        height: 720px;
+        position: absolute;
+        margin-top: -260px;
+        opacity: 0;
+        background-size: cover;
+        z-index: 2;
+        transition: .2s ease-in-out;
+        background-position: center;
+    }
+
+    .home4-artist-name:hover+.home4-artist-img {
+        opacity: 1;
+    }
+
+    /* progrem */
+
+    .content {
+        width: 78.125%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .con_a {
+        width: 47%;
+    }
+
+    .content-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #section2 .imgbox {
+        width: 100%;
+        height: 82%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+    #section2 .imgbox img {
+        width: 100%;
+
+    }
+
+    #section2 .textbox {
+        width: 100%;
+        height: 15%;
+    }
+
+    #section2 .textbox span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    #section2 .textbox h4 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+
+}
+
+@media (min-width: 1501px) {
+    /* html{font-size: 1vw;} */
+
+    .title {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 150px;
+    }
+
+    .title>p {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+
+    /* slider */
+
+    #slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        margin-bottom: 180px;
+    }
+
+    #slider .slide {
+        width: 100%;
+        position: absolute;
+    }
+
+    #slider .slide>.s {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+
+    #slider .slide>.s img {
+        height: 100vh;
+    }
+
+    #slider .slide>.s>.con {
+        width: 62.5%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #slider .slide>.s>.con span {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
+    #slider .slide>.s>.con h1 span {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    #slider .slide>.s>.con p {
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 50px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+    }
+
+    #slider .s_menu {
+        width: 30px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 3%;
+        z-index: 2;
+    }
+
+    #slider .s_menu>.pg {
+        width: 30px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #slider .s_menu>.pg>.page {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt {
+        width: 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #slider .s_menu>.nt p {
+        width: 30px;
+        height: 45px;
+        font-size: 16px;
+        writing-mode: vertical-rl;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    #slider .s_menu>.nt>.n {
+        content: '';
+        width: 1px;
+        height: 90px;
+        background-color: #fff;
+        animation-name: n_ani;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes n_ani {
+        from {
+            height: 90px;
+        }
+
+        to {
+            height: 0;
+        }
+    }
+
+    #section_all {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* #section - 박서연 */
+
+    #section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-bottom: 180px;
+        transform: translateY(-100px);
+        transition: all 2s;
+        opacity: 0;
+    }
+
+    #content {
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Sequence {
+        width: 10%;
+        height: 560px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prev {
+        transition: all 0.5s;
+    }
+
+    .prev>img:nth-of-type(2) {
+        display: none;
+    }
+
+    .prev>img:nth-of-type(1) {
+        display: block;
+    }
+
+    .prev:hover {
+        cursor: pointer;
+        color: #7E49F2;
+        transform: scale(1.4);
+    }
+
+    .all {
+        transition: all 0.4s;
+    }
+
+    .all:hover {
+        transform: scale(0.96);
+    }
+
+    #slideBox {
+        width: 90%;
+        height: 560px;
+        /* background-color: gray; */
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide_2 {
+        width: 230%;
+
+    }
+
+    .img_box1 {
+        /* 100 / 8 = 12.5 */
+        width: 12.5%; 
+        height: 560px;
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image1 {
+        width: 100%;
+        height: 480px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image1>img {
+        width: 100%;
+    }
+
+    .text_box1 {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box1 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .img_box2 {
+        width: 12.5%;
+        height: 460px;
+        /* background-color: red; */
+        margin: 0 20px;
+        float: left;
+    }
+
+    .image2 {
+        width: 100%;
+        height: 350px;
+        /* background-color : gold; */
+        overflow: hidden;
+        /* border: 1px solid black; */
+    }
+
+    .image2>img {
+        width: 100%;
+    }
+
+    .text_box2 {
+        width: 100%;
+        height: 80px;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .text_box2 p {
+        color: #7E49F2;
+        text-align: left;
+        line-height: 30px;
+    }
+
+    /* recount-윤동일 */
+
+    .ricout {
+        width: 1500px;
+        height: 720px;
+        position: relative;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .ricout .imgbox {
+        position: absolute;
+        z-index: 3;
+        width: 60%;
+        height: 540px;
+        overflow: hidden;
+    }
+
+    .ricout .imgbox img {
+        width: 100%;
+    }
+
+    .ricout article {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 80%;
+        height: 600px;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: flex-end;
+        opacity: 0.8;
+        padding-top: 60px;
+    }
+
+    .ricout article h1 {
+        position: absolute;
+        top: -99px;
+        right: 0;
+        font-size: 102px;
+        color: #e6e6e6;
+        opacity: 0.5;
+    }
+
+    .ricout .textbox {
+        width: 45%;
+        height: auto;
+    }
+
+    .ricout .textbox .text {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-family: 'Noto Sans KR';
+    }
+
+    .about_img {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        width: 40%;
+        z-index: -2;
+    }
+
+
+    /* #secti0n1,#section2-최윤화 */
+
+    #section1 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section2 {
+        width: 100%;
+        transform: translateY(-100px);
+        transition: all 1s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+
+    .title>p {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    /* home4 artist */
+    #home4 {
+        width: 100%;
+        height: 960px;
+        background-color: #EEECEA;
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home4 a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .home4-artist {
+        width: 1500px;
+        height: 240px;
+        display: flex;
+        position: relative;
+    }
+
+    .home4-artist-country {
+        width: 30%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        align-items: center;
+    }
+
+    .home4-artist-country h3 {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    .home4-artist-name {
+        width: 70%;
+        height: 240px;
+        border-bottom: 1px solid rgba(150, 150, 150, .3);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: .2s ease-in-out;
+    }
+
+    .home4-artist-name h1 {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 110px;
+        color: #1f1f1f;
+        text-align: right;
+    }
+
+    .home4-artist-img {
+        width: 520px;
+        height: 720px;
+        position: absolute;
+        margin-top: -260px;
+        opacity: 0;
+        background-size: cover;
+        z-index: 2;
+        transition: .2s ease-in-out;
+        background-position: center;
+    }
+
+    .home4-artist-name:hover+.home4-artist-img {
+        opacity: 1;
+    }
+
+    /* progrem */
+
+    .content {
+        width: 1500px;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .con_a {
+        width: 47%;
+    }
+
+    .content-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #section2 .imgbox {
+        width: 100%;
+        height: 82%;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 3%;
+    }
+
+    #section2 .imgbox img {
+        width: 100%;
+
+    }
+
+    #section2 .textbox {
+        width: 100%;
+        height: 15%;
+    }
+
+    #section2 .textbox h4{
+        margin-bottom: 5px;
+    }
+
+    #section2 .textbox span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
 }
